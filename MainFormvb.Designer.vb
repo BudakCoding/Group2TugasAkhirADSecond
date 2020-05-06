@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MainFormvb
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class MainFormvb
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -169,7 +169,6 @@ Partial Class MainFormvb
         Me.Label55 = New System.Windows.Forms.Label()
         Me.Label56 = New System.Windows.Forms.Label()
         Me.editscheduledatashown = New System.Windows.Forms.DataGridView()
-        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.PanelAddTheatre.SuspendLayout()
         CType(Me.addtheatrestatusbox.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -2194,21 +2193,12 @@ Partial Class MainFormvb
         Me.editscheduledatashown.Size = New System.Drawing.Size(1000, 391)
         Me.editscheduledatashown.TabIndex = 18
         '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.Transparent
-        Me.Panel2.Location = New System.Drawing.Point(278, 100)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(96, 109)
-        Me.Panel2.TabIndex = 43
-        '
         'MainFormvb
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Group2TugasAkhirADSecond.My.Resources.ImageHolder.BackgroundFloral
         Me.ClientSize = New System.Drawing.Size(1280, 720)
-        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.PanelEditSchedule)
         Me.Controls.Add(Me.PanelAddSchedule)
         Me.Controls.Add(Me.PanelAddFilm)
@@ -2377,5 +2367,4 @@ Partial Class MainFormvb
     Friend WithEvents Label55 As Label
     Friend WithEvents Label56 As Label
     Friend WithEvents editscheduledatashown As DataGridView
-    Friend WithEvents Panel2 As Panel
 End Class
