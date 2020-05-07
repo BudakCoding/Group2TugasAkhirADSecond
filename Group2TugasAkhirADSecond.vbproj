@@ -100,6 +100,12 @@
     <Compile Include="AdminLogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FilmSelection.Designer.vb">
+      <DependentUpon>FilmSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FilmSelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ImageHolder.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -139,16 +145,31 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Seats.Designer.vb">
+      <DependentUpon>Seats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seats.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Selection.Designer.vb">
       <DependentUpon>Selection.vb</DependentUpon>
     </Compile>
     <Compile Include="Selection.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TimeSelection.Designer.vb">
+      <DependentUpon>TimeSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AdminLogin.resx">
       <DependentUpon>AdminLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilmSelection.resx">
+      <DependentUpon>FilmSelection.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ImageHolder.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
@@ -171,8 +192,14 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Seats.resx">
+      <DependentUpon>Seats.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Selection.resx">
       <DependentUpon>Selection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeSelection.resx">
+      <DependentUpon>TimeSelection.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

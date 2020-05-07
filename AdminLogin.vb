@@ -31,8 +31,8 @@ Public Class AdminLogin
                         adapt = New MySqlDataAdapter(command)
                         adapt.Fill(passcheck)
                         If passcheck.Rows(0).Item(0) = passwordtextbox.Text Then
-                            Me.Hide()
                             MainFormvb.Show()
+                            Me.Hide()
                         Else
                             errors()
                         End If

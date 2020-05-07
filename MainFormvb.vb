@@ -43,6 +43,13 @@ Public Class MainFormvb
     Dim esdt As New DataTable
 
 
+    'Exit Button
+    Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
+        Selection.Show()
+        Me.Close()
+    End Sub
+
+
     'Uncheck
     Private Sub uncheck()
         Addtheatre.Checked = False

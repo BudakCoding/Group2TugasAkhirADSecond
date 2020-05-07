@@ -55,6 +55,8 @@ Partial Class MainFormvb
         Dim DataGridViewCellStyle31 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label57 = New System.Windows.Forms.Label()
+        Me.ExitButton = New DevExpress.XtraEditors.SimpleButton()
         Me.Label44 = New System.Windows.Forms.Label()
         Me.Label43 = New System.Windows.Forms.Label()
         Me.Label42 = New System.Windows.Forms.Label()
@@ -205,6 +207,8 @@ Partial Class MainFormvb
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Label57)
+        Me.Panel1.Controls.Add(Me.ExitButton)
         Me.Panel1.Controls.Add(Me.Label44)
         Me.Panel1.Controls.Add(Me.Label43)
         Me.Panel1.Controls.Add(Me.Label42)
@@ -222,6 +226,29 @@ Partial Class MainFormvb
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1280, 94)
         Me.Panel1.TabIndex = 0
+        '
+        'Label57
+        '
+        Me.Label57.AutoSize = True
+        Me.Label57.BackColor = System.Drawing.Color.Transparent
+        Me.Label57.Font = New System.Drawing.Font("Japanese Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label57.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label57.Location = New System.Drawing.Point(1176, 72)
+        Me.Label57.Name = "Label57"
+        Me.Label57.Size = New System.Drawing.Size(104, 20)
+        Me.Label57.TabIndex = 48
+        Me.Label57.Text = "Back to Menu"
+        '
+        'ExitButton
+        '
+        Me.ExitButton.BackgroundImage = Global.Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldLogOutExit
+        Me.ExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.ExitButton.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
+        Me.ExitButton.Location = New System.Drawing.Point(1193, 12)
+        Me.ExitButton.Name = "ExitButton"
+        Me.ExitButton.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light
+        Me.ExitButton.Size = New System.Drawing.Size(75, 60)
+        Me.ExitButton.TabIndex = 47
         '
         'Label44
         '
@@ -2367,4 +2394,6 @@ Partial Class MainFormvb
     Friend WithEvents Label55 As Label
     Friend WithEvents Label56 As Label
     Friend WithEvents editscheduledatashown As DataGridView
+    Friend WithEvents ExitButton As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents Label57 As Label
 End Class

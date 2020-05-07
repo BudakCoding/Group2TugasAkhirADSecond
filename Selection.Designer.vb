@@ -61,11 +61,11 @@ Partial Class Selection
         Me.AdminLabel.BackColor = System.Drawing.Color.Transparent
         Me.AdminLabel.Font = New System.Drawing.Font("Japanese Gothic", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AdminLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.AdminLabel.Location = New System.Drawing.Point(627, 331)
+        Me.AdminLabel.Location = New System.Drawing.Point(501, 334)
         Me.AdminLabel.Name = "AdminLabel"
-        Me.AdminLabel.Size = New System.Drawing.Size(240, 77)
+        Me.AdminLabel.Size = New System.Drawing.Size(366, 77)
         Me.AdminLabel.TabIndex = 4
-        Me.AdminLabel.Text = "ADMIN"
+        Me.AdminLabel.Text = "       ADMIN"
         '
         'ExitLabel
         '
@@ -73,11 +73,11 @@ Partial Class Selection
         Me.ExitLabel.BackColor = System.Drawing.Color.Transparent
         Me.ExitLabel.Font = New System.Drawing.Font("Japanese Gothic", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ExitLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ExitLabel.Location = New System.Drawing.Point(627, 518)
+        Me.ExitLabel.Location = New System.Drawing.Point(534, 519)
         Me.ExitLabel.Name = "ExitLabel"
-        Me.ExitLabel.Size = New System.Drawing.Size(167, 77)
+        Me.ExitLabel.Size = New System.Drawing.Size(293, 77)
         Me.ExitLabel.TabIndex = 5
-        Me.ExitLabel.Text = "EXIT"
+        Me.ExitLabel.Text = "       EXIT"
         '
         'OrderButton
         '
@@ -96,11 +96,11 @@ Partial Class Selection
         Me.OrderLabel.BackColor = System.Drawing.Color.Transparent
         Me.OrderLabel.Font = New System.Drawing.Font("Japanese Gothic", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.OrderLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.OrderLabel.Location = New System.Drawing.Point(624, 145)
+        Me.OrderLabel.Location = New System.Drawing.Point(534, 146)
         Me.OrderLabel.Name = "OrderLabel"
-        Me.OrderLabel.Size = New System.Drawing.Size(243, 77)
+        Me.OrderLabel.Size = New System.Drawing.Size(333, 77)
         Me.OrderLabel.TabIndex = 3
-        Me.OrderLabel.Text = "ORDER"
+        Me.OrderLabel.Text = "     ORDER"
         '
         'Selection
         '
@@ -108,12 +108,12 @@ Partial Class Selection
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Group2TugasAkhirADSecond.My.Resources.ImageHolder.BackgroundFloral
         Me.ClientSize = New System.Drawing.Size(1280, 720)
-        Me.Controls.Add(Me.ExitLabel)
-        Me.Controls.Add(Me.AdminLabel)
-        Me.Controls.Add(Me.OrderLabel)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.AdminButton)
         Me.Controls.Add(Me.OrderButton)
+        Me.Controls.Add(Me.OrderLabel)
+        Me.Controls.Add(Me.AdminLabel)
+        Me.Controls.Add(Me.ExitLabel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Selection"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
