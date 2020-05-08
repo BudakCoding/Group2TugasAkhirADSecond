@@ -91,6 +91,11 @@ Public Class MainFormvb
         PanelEditSchedule.Height = 620
         PanelEditSchedule.Location = New Point(0, 100)
 
+        'Report Panel
+        ReportPanel.Width = 1280
+        ReportPanel.Height = 620
+        ReportPanel.Location = New Point(0, 100)
+
         panelshide()
     End Sub
 
@@ -102,10 +107,19 @@ Public Class MainFormvb
         PanelEditFilm.Visible = False
         PanelAddSchedule.Visible = False
         PanelEditSchedule.Visible = False
+        ReportPanel.Visible = False
     End Sub
 
 
 
+
+    Private Sub ReportButton_CheckedChanged(sender As Object, e As EventArgs) Handles ReportButton.CheckedChanged
+        If ReportButton.Checked = True Then
+            panelshide()
+            uncheck()
+            ReportPanel.Visible = True
+        End If
+    End Sub
 
 
 
@@ -636,6 +650,10 @@ Public Class MainFormvb
 
 
         ForTables()
+    End Sub
+
+    Private Sub FilmReportButton_Click(sender As Object, e As EventArgs) Handles FilmReportButton.Click
+        FilmSelection.Show()
     End Sub
 
     Private Sub forPGs()

@@ -145,6 +145,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ReceiptFormvb.Designer.vb">
+      <DependentUpon>ReceiptFormvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiptFormvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Seats.Designer.vb">
       <DependentUpon>Seats.vb</DependentUpon>
     </Compile>
@@ -191,6 +197,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiptFormvb.resx">
+      <DependentUpon>ReceiptFormvb.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Seats.resx">
       <DependentUpon>Seats.vb</DependentUpon>
@@ -282,6 +291,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\GoldSchedule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoldX.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

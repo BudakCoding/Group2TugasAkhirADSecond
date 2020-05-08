@@ -6,21 +6,22 @@ Public Class TimeSelection
         Dim query As String
         Dim command As New MySqlCommand
         Dim adapt As New MySqlDataAdapter
-        Dim dt As New DataTable
+        Dim dts As New DataTable
         Try
             connect.Open()
-            query = "SELECT s.starting_time, s.theatre_id FROM screening s, dtheatre d WHERE d.film_id = '" + ChosenFilm + "' AND d.screening_id = s.screening_id"
+            query = "SELECT s.starting_time, d.theatre_id FROM screening s, dtheatre d WHERE d.film_id = '" + ChosenFilm + "' AND d.screening_id = s.screening_id"
             command = New MySqlCommand(query, connect)
             adapt = New MySqlDataAdapter(command)
-            adapt.Fill(dt)
+            adapt.Fill(dts)
 
-            timebox.Properties.DataSource = dt
-            timebox.Properties.DisplayMember = "s.starting_time"
-            timebox.Properties.ValueMember = "s.theatre_id"
+            timebox.Properties.DataSource = dts
+            timebox.Properties.DisplayMember = "starting_time"
+            timebox.Properties.ValueMember = "theatre_id"
             timebox.Text = ""
             connect.Close()
         Catch ex As Exception
             connect.Close()
+            MsgBox(ex.Message)
         End Try
 
         timeimage.Image = Image.FromFile("C:\Users\user\source\repos\Group2TugasAkhirADSecond\Resources\" + ChosenFilm + ".jpg")

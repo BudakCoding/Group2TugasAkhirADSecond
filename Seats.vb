@@ -19,18 +19,20 @@ Public Class Seats
     Public tickets As Integer
 
 
-    Private Sub painting(sender As Object, e As PaintEventArgs)
-        Dim BorderPanel As New Panel
+    'Private Sub painting(sender As Object, e As PaintEventArgs)
+    '    Dim BorderPanel As New Panel
 
-        BorderPanel.Width = 800
-        BorderPanel.Height = 600
-        BorderPanel.BackColor = Color.Transparent
-        BorderPanel.BorderStyle = BorderStyle.Fixed3D
-        ControlPaint.DrawBorder(e.Graphics, BorderPanel.ClientRectangle, Color.FromArgb(255, 207, 64), ButtonBorderStyle.Solid)
-    End Sub
+    '    BorderPanel.Width = 800
+    '    BorderPanel.Height = 600
+    '    BorderPanel.BackColor = Color.Transparent
+    '    BorderPanel.BorderStyle = BorderStyle.Fixed3D
+    '    ControlPaint.DrawBorder(e.Graphics, BorderPanel.ClientRectangle, Color.FromArgb(255, 207, 64), ButtonBorderStyle.Solid)
+    'End Sub
+
     Private Sub ShowSeats_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
-            painting(sender, e)
+            tickets = 0
+            'painting(sender, e)
             Me.Height = 720
             Me.Width = 1280
             Me.BackColor = Color.FromArgb(18, 16, 10)
@@ -81,7 +83,6 @@ Public Class Seats
                         .Width = 25
                         .Height = 25
                         .Location = New Point(x, y)
-                        .Text = count
                         .FlatStyle = FlatStyle.Flat
                         .Name = markx + "_" + marky 'JANGAN LUPA TAMBAH ID THEATRE DAN KODE UNTUK MERAH DAN APA GITU
                         .Tag = dw.Rows(count).Item(0).ToString

@@ -31,7 +31,7 @@ Partial Class TimeSelection
         '
         'timebox
         '
-        Me.timebox.Location = New System.Drawing.Point(440, 550)
+        Me.timebox.Location = New System.Drawing.Point(440, 497)
         Me.timebox.Name = "timebox"
         Me.timebox.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(10, Byte), Integer))
         Me.timebox.Properties.Appearance.Font = New System.Drawing.Font("Japanese Gothic", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -52,6 +52,7 @@ Partial Class TimeSelection
         Me.timebox.Properties.AppearanceFocused.Options.UseFont = True
         Me.timebox.Properties.AppearanceFocused.Options.UseForeColor = True
         Me.timebox.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.timebox.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard
         Me.timebox.Size = New System.Drawing.Size(400, 32)
         Me.timebox.TabIndex = 0
         '
@@ -61,7 +62,7 @@ Partial Class TimeSelection
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Japanese Gothic", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(433, 508)
+        Me.Label1.Location = New System.Drawing.Point(433, 455)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(88, 39)
         Me.Label1.TabIndex = 1

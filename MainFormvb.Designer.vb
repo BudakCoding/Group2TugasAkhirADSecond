@@ -55,6 +55,8 @@ Partial Class MainFormvb
         Dim DataGridViewCellStyle31 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label58 = New System.Windows.Forms.Label()
+        Me.ReportButton = New DevExpress.XtraEditors.CheckButton()
         Me.Label57 = New System.Windows.Forms.Label()
         Me.ExitButton = New DevExpress.XtraEditors.SimpleButton()
         Me.Label44 = New System.Windows.Forms.Label()
@@ -171,6 +173,13 @@ Partial Class MainFormvb
         Me.Label55 = New System.Windows.Forms.Label()
         Me.Label56 = New System.Windows.Forms.Label()
         Me.editscheduledatashown = New System.Windows.Forms.DataGridView()
+        Me.ReportPanel = New System.Windows.Forms.Panel()
+        Me.SalesReportButton = New System.Windows.Forms.Button()
+        Me.TheatreReportButton = New System.Windows.Forms.Button()
+        Me.FilmReportButton = New System.Windows.Forms.Button()
+        Me.Label61 = New System.Windows.Forms.Label()
+        Me.Label60 = New System.Windows.Forms.Label()
+        Me.Label59 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.PanelAddTheatre.SuspendLayout()
         CType(Me.addtheatrestatusbox.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -202,11 +211,14 @@ Partial Class MainFormvb
         CType(Me.addscheduledatashowntheatre, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelEditSchedule.SuspendLayout()
         CType(Me.editscheduledatashown, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ReportPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Label58)
+        Me.Panel1.Controls.Add(Me.ReportButton)
         Me.Panel1.Controls.Add(Me.Label57)
         Me.Panel1.Controls.Add(Me.ExitButton)
         Me.Panel1.Controls.Add(Me.Label44)
@@ -226,6 +238,28 @@ Partial Class MainFormvb
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1280, 94)
         Me.Panel1.TabIndex = 0
+        '
+        'Label58
+        '
+        Me.Label58.AutoSize = True
+        Me.Label58.BackColor = System.Drawing.Color.Transparent
+        Me.Label58.Font = New System.Drawing.Font("Japanese Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label58.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label58.Location = New System.Drawing.Point(936, 72)
+        Me.Label58.Name = "Label58"
+        Me.Label58.Size = New System.Drawing.Size(56, 20)
+        Me.Label58.TabIndex = 50
+        Me.Label58.Text = "Report"
+        '
+        'ReportButton
+        '
+        Me.ReportButton.BackgroundImage = Global.Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldDateEdit
+        Me.ReportButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.ReportButton.Location = New System.Drawing.Point(930, 12)
+        Me.ReportButton.Name = "ReportButton"
+        Me.ReportButton.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light
+        Me.ReportButton.Size = New System.Drawing.Size(75, 60)
+        Me.ReportButton.TabIndex = 49
         '
         'Label57
         '
@@ -1353,9 +1387,9 @@ Partial Class MainFormvb
         Me.PanelEditFilm.Controls.Add(Me.Label36)
         Me.PanelEditFilm.Controls.Add(Me.Label37)
         Me.PanelEditFilm.Controls.Add(Me.Label38)
-        Me.PanelEditFilm.Location = New System.Drawing.Point(0, 242)
+        Me.PanelEditFilm.Location = New System.Drawing.Point(13, 239)
         Me.PanelEditFilm.Name = "PanelEditFilm"
-        Me.PanelEditFilm.Size = New System.Drawing.Size(118, 122)
+        Me.PanelEditFilm.Size = New System.Drawing.Size(122, 128)
         Me.PanelEditFilm.TabIndex = 41
         '
         'editfilmdurationbox
@@ -2220,19 +2254,97 @@ Partial Class MainFormvb
         Me.editscheduledatashown.Size = New System.Drawing.Size(1000, 391)
         Me.editscheduledatashown.TabIndex = 18
         '
+        'ReportPanel
+        '
+        Me.ReportPanel.BackColor = System.Drawing.Color.Transparent
+        Me.ReportPanel.Controls.Add(Me.SalesReportButton)
+        Me.ReportPanel.Controls.Add(Me.TheatreReportButton)
+        Me.ReportPanel.Controls.Add(Me.FilmReportButton)
+        Me.ReportPanel.Controls.Add(Me.Label61)
+        Me.ReportPanel.Controls.Add(Me.Label60)
+        Me.ReportPanel.Controls.Add(Me.Label59)
+        Me.ReportPanel.Location = New System.Drawing.Point(278, 242)
+        Me.ReportPanel.Name = "ReportPanel"
+        Me.ReportPanel.Size = New System.Drawing.Size(154, 117)
+        Me.ReportPanel.TabIndex = 43
+        '
+        'SalesReportButton
+        '
+        Me.SalesReportButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.SalesReportButton.Location = New System.Drawing.Point(799, 203)
+        Me.SalesReportButton.Name = "SalesReportButton"
+        Me.SalesReportButton.Size = New System.Drawing.Size(75, 75)
+        Me.SalesReportButton.TabIndex = 58
+        Me.SalesReportButton.UseVisualStyleBackColor = True
+        '
+        'TheatreReportButton
+        '
+        Me.TheatreReportButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.TheatreReportButton.Location = New System.Drawing.Point(575, 206)
+        Me.TheatreReportButton.Name = "TheatreReportButton"
+        Me.TheatreReportButton.Size = New System.Drawing.Size(75, 75)
+        Me.TheatreReportButton.TabIndex = 57
+        Me.TheatreReportButton.UseVisualStyleBackColor = True
+        '
+        'FilmReportButton
+        '
+        Me.FilmReportButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.FilmReportButton.Location = New System.Drawing.Point(347, 213)
+        Me.FilmReportButton.Name = "FilmReportButton"
+        Me.FilmReportButton.Size = New System.Drawing.Size(75, 75)
+        Me.FilmReportButton.TabIndex = 56
+        Me.FilmReportButton.UseVisualStyleBackColor = True
+        '
+        'Label61
+        '
+        Me.Label61.AutoSize = True
+        Me.Label61.BackColor = System.Drawing.Color.Transparent
+        Me.Label61.Font = New System.Drawing.Font("Japanese Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label61.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label61.Location = New System.Drawing.Point(791, 297)
+        Me.Label61.Name = "Label61"
+        Me.Label61.Size = New System.Drawing.Size(95, 20)
+        Me.Label61.TabIndex = 55
+        Me.Label61.Text = "Add Theatre"
+        '
+        'Label60
+        '
+        Me.Label60.AutoSize = True
+        Me.Label60.BackColor = System.Drawing.Color.Transparent
+        Me.Label60.Font = New System.Drawing.Font("Japanese Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label60.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label60.Location = New System.Drawing.Point(566, 299)
+        Me.Label60.Name = "Label60"
+        Me.Label60.Size = New System.Drawing.Size(95, 20)
+        Me.Label60.TabIndex = 54
+        Me.Label60.Text = "Add Theatre"
+        '
+        'Label59
+        '
+        Me.Label59.AutoSize = True
+        Me.Label59.BackColor = System.Drawing.Color.Transparent
+        Me.Label59.Font = New System.Drawing.Font("Japanese Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label59.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(207, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label59.Location = New System.Drawing.Point(340, 302)
+        Me.Label59.Name = "Label59"
+        Me.Label59.Size = New System.Drawing.Size(95, 20)
+        Me.Label59.TabIndex = 51
+        Me.Label59.Text = "Add Theatre"
+        '
         'MainFormvb
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Group2TugasAkhirADSecond.My.Resources.ImageHolder.BackgroundFloral
         Me.ClientSize = New System.Drawing.Size(1280, 720)
-        Me.Controls.Add(Me.PanelEditSchedule)
-        Me.Controls.Add(Me.PanelAddSchedule)
-        Me.Controls.Add(Me.PanelAddFilm)
+        Me.Controls.Add(Me.ReportPanel)
         Me.Controls.Add(Me.PanelEditFilm)
         Me.Controls.Add(Me.PanelAddTheatre)
         Me.Controls.Add(Me.PanelEditTheatre)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.PanelAddFilm)
+        Me.Controls.Add(Me.PanelEditSchedule)
+        Me.Controls.Add(Me.PanelAddSchedule)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.name = "MainFormvb"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -2275,6 +2387,8 @@ Partial Class MainFormvb
         Me.PanelEditSchedule.ResumeLayout(False)
         Me.PanelEditSchedule.PerformLayout()
         CType(Me.editscheduledatashown, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ReportPanel.ResumeLayout(False)
+        Me.ReportPanel.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -2396,4 +2510,13 @@ Partial Class MainFormvb
     Friend WithEvents editscheduledatashown As DataGridView
     Friend WithEvents ExitButton As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents Label57 As Label
+    Friend WithEvents Label58 As Label
+    Friend WithEvents ReportButton As DevExpress.XtraEditors.CheckButton
+    Friend WithEvents ReportPanel As Panel
+    Friend WithEvents SalesReportButton As Button
+    Friend WithEvents TheatreReportButton As Button
+    Friend WithEvents FilmReportButton As Button
+    Friend WithEvents Label61 As Label
+    Friend WithEvents Label60 As Label
+    Friend WithEvents Label59 As Label
 End Class

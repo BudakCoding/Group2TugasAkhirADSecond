@@ -28,6 +28,8 @@ Partial Class Seats
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.buttoncheck = New System.Windows.Forms.Button()
+        Me.buttonx = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -96,12 +98,40 @@ Partial Class Seats
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Available"
         '
+        'buttoncheck
+        '
+        Me.buttoncheck.BackColor = System.Drawing.Color.Transparent
+        Me.buttoncheck.BackgroundImage = Global.Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldCheck
+        Me.buttoncheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.buttoncheck.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.buttoncheck.ForeColor = System.Drawing.Color.Transparent
+        Me.buttoncheck.Location = New System.Drawing.Point(315, 605)
+        Me.buttoncheck.Name = "buttoncheck"
+        Me.buttoncheck.Size = New System.Drawing.Size(75, 75)
+        Me.buttoncheck.TabIndex = 6
+        Me.buttoncheck.UseVisualStyleBackColor = False
+        '
+        'buttonx
+        '
+        Me.buttonx.BackColor = System.Drawing.Color.Transparent
+        Me.buttonx.BackgroundImage = Global.Group2TugasAkhirADSecond.My.Resources.ImageHolder.GoldX
+        Me.buttonx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.buttonx.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.buttonx.ForeColor = System.Drawing.Color.Transparent
+        Me.buttonx.Location = New System.Drawing.Point(410, 605)
+        Me.buttonx.Name = "buttonx"
+        Me.buttonx.Size = New System.Drawing.Size(75, 75)
+        Me.buttonx.TabIndex = 7
+        Me.buttonx.UseVisualStyleBackColor = False
+        '
         'Seats
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Group2TugasAkhirADSecond.My.Resources.ImageHolder.BackgroundFloral
         Me.ClientSize = New System.Drawing.Size(1280, 720)
+        Me.Controls.Add(Me.buttonx)
+        Me.Controls.Add(Me.buttoncheck)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -110,6 +140,7 @@ Partial Class Seats
         Me.Controls.Add(Me.Button1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Seats"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Seats"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -122,4 +153,6 @@ Partial Class Seats
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents buttoncheck As Button
+    Friend WithEvents buttonx As Button
 End Class

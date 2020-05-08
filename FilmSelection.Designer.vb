@@ -304,6 +304,7 @@ Partial Class FilmSelection
         Me.Controls.Add(Me.box1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FilmSelection"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FilmSelection"
         CType(Me.box1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.box2, System.ComponentModel.ISupportInitialize).EndInit()
